@@ -35,7 +35,7 @@ const translations = {
     "about.title": "Sobre Mim",
     "about.subtitle": "Desenvolvedor apaixonado por tecnologia e inovação",
     "about.description":
-      "Desenvolvedor de Jogos Digitais formado pela Universidade de Caxias do Sul (UCS), com experiência em Unity, Unreal, programação e modelagem de software. Possuo histórico de 8 anos como militar no Exército Brasileiro, o que consolidou habilidades de disciplina, liderança, trabalho em equipe e resiliência. Atualmente atuo na WMC Tecnologia, prestando suporte técnico e funcional para sistemas ERP e plataformas Android, com foco em análise, melhorias e usabilidade. Participou da Game Jam Plus 2022, conquistando o 1º lugar regional com o jogo Dodge Circle. Sou apaixonado por tecnologia, criatividade, games e inovação, sempre buscando aprendizado contínuo e novos desafios.",
+      "Desenvolvedor de Jogos Digitais formado pela Universidade de Caxias do Sul (UCS), com experiência em Unity, Unreal, programação e modelagem de software. Sou ex militar, o que consolidou habilidades de disciplina, liderança, trabalho em equipe e resiliência. Atualmente atuo na WMC Tecnologia, prestando suporte técnico e funcional para sistemas ERP e plataformas Android, com foco em análise, melhorias e usabilidade. Participei de duas edições da Game Jam Plus, em 2022, conquistando o 1º lugar regional com o jogo Dodge Circle. Sou apaixonado por tecnologia, criatividade, games e inovação, sempre buscando aprendizado contínuo e novos desafios.",
     "about.education": "Formação",
     "about.educationDesc": "Tecnólogo em Jogos Digitais - UCS",
     "about.experience": "Experiência Atual",
