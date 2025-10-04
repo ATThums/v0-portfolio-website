@@ -24,7 +24,7 @@ const translations = {
 
     // Hero Section
     "hero.title": "Desenvolvedor de Jogos & Artista Digital",
-    "hero.subtitle": "Criando experiências interativas e arte digital inovadora",
+    "hero.subtitle": "Criando experiências interativas digitais",
     "hero.cta": "Ver Portfólio",
     "hero.downloadCV": "Baixar CV",
     "hero.connectWith": "Conecte-se comigo:",
