@@ -13,44 +13,44 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <main className="pt-16">
+      <main className="pt-16" role="main" aria-label="Conteúdo principal">
         {/* Hero Section */}
-        <section id="hero">
+        <section id="hero" aria-labelledby="hero-heading">
           <HeroSection />
         </section>
 
         {/* About Section */}
-        <section id="about">
+        <section id="about" aria-labelledby="about-heading">
           <AboutSection />
         </section>
 
         {/* Skills Section */}
-        <section id="skills">
+        <section id="skills" aria-labelledby="skills-heading">
           <SkillsSection />
         </section>
 
         {/* Games Section */}
-        <section id="games">
+        <section id="games" aria-labelledby="games-heading">
           <GamesSection />
         </section>
 
         {/* 3D Arts Section */}
-        <section id="arts-3d">
+        <section id="arts-3d" aria-labelledby="arts-3d-heading">
           <Arts3DSection />
         </section>
 
         {/* AI Gallery Section */}
-        <section id="gallery">
+        <section id="gallery" aria-labelledby="gallery-heading">
           <AIGallerySection />
         </section>
 
         {/* Works Section */}
-        <section id="works">
+        <section id="works" aria-labelledby="works-heading">
           <WorksSection />
         </section>
 
         {/* Contact Section */}
-        <section id="contact">
+        <section id="contact" aria-labelledby="contact-heading">
           <ContactSection />
         </section>
       </main>

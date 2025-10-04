@@ -1,0 +1,27 @@
+{
+  "name": "Anderson Tonin Thums - Portfolio",
+  "short_name": "AT Portfolio",
+  "description": "Portfólio profissional de Anderson Tonin Thums - Desenvolvedor de Jogos & Artista Digital",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-fav.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-fav.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "games", "art"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
