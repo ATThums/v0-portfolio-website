@@ -17,8 +17,20 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-sm"
+        style={{
+          backgroundImage: "url(/cyberpunk-car.jpg)",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      />
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/20" />
+
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background/50 to-accent/5" />
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
