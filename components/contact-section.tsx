@@ -108,20 +108,6 @@ export function ContactSection() {
                 </CardContent>
               </Card>
             </div>
-
-            {/* Availability */}
-            <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-chart-2/10 rounded-2xl p-6 border border-primary/20">
-              <h4 className="font-semibold text-foreground mb-2">{t("contact.availability")}</h4>
-              <p className="text-muted-foreground text-sm mb-3">
-                {language === "pt"
-                  ? "Estou atualmente disponível para novos projetos e colaborações. Tempo de resposta é tipicamente dentro de 24 horas."
-                  : "I'm currently available for new projects and collaborations. Response time is typically within 24 hours."}
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-accent rounded-full animate-pulse" />
-                <span className="text-sm text-accent font-medium">{t("contact.available")}</span>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
@@ -197,8 +183,8 @@ export function ContactSection() {
         <div className="mt-16 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
             {language === "pt"
-              ? "© 2024 Portfólio. Construído com Next.js, TypeScript e Tailwind CSS."
-              : "© 2024 Portfolio. Built with Next.js, TypeScript and Tailwind CSS."}
+              ? "© 2025 Portfólio. Construído com Next.js, TypeScript e Tailwind CSS."
+              : "© 2025 Portfolio. Built with Next.js, TypeScript and Tailwind CSS."}
           </p>
         </div>
       </div>

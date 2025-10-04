@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "@/contexts/theme-context"
 import { useLanguage } from "@/contexts/language-context"
 import { Moon, Sun, Menu, X, Globe } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import Image from "next/image"
 
 export function Header() {
@@ -31,17 +30,21 @@ export function Header() {
     setIsMenuOpen(false)
   }
 
+  const toggleLanguage = () => {
+    setLanguage(language === "pt" ? "en" : "pt")
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <Image
-              src="/images/design-mode/logo-att-bc-pqn%281%29.png"
+              src={theme === "dark" ? "/images/design-mode/logo-att-bc-pqn%281%29.png" : "/logo-att-pt-pqn.png"}
               alt="Logo"
               width={40}
               height={40}
-              className="w-10 h-10 object-contain"
+              className="h-10 object-contain py-0.5 px-1 w-12"
             />
           </div>
 
@@ -60,23 +63,16 @@ export function Header() {
 
           {/* Controls */}
           <div className="flex items-center space-x-2">
-            {/* Language Selector */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
-                  <Globe className="h-4 w-4" />
-                  <span className="sr-only">Select language</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setLanguage("pt")} className={language === "pt" ? "bg-accent" : ""}>
-                  Português
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("en")} className={language === "en" ? "bg-accent" : ""}>
-                  English
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="h-9 w-9 p-0"
+              title={language === "pt" ? "Switch to English" : "Mudar para Português"}
+            >
+              <Globe className="h-4 w-4" />
+              <span className="sr-only">Toggle language</span>
+            </Button>
 
             {/* Theme Toggle */}
             <Button
