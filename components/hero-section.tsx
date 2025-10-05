@@ -26,7 +26,7 @@ export function HeroSection() {
           backgroundSize: "cover",
         }}
       />
-      <div className="absolute inset-0 bg-white/10 dark:bg-black/80" />
+      <div className="absolute inset-0 bg-white/10 dark:bg-black/60" />
 
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background/50 to-accent/5" />
