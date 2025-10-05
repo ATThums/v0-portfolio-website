@@ -80,18 +80,18 @@ export function SkillsSection() {
         ]
 
   return (
-    <section
-      id="skills"
-      className="py-20 relative overflow-hidden"
-      style={{
-        backgroundImage: "url(/old-abandoned-arcade-room.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/70" />
+    <section id="skills" className="py-20 relative overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-sm"
+        style={{
+          backgroundImage: "url(/old-abandoned-arcade-room.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div className="absolute inset-0 bg-white/30 dark:bg-black/60" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

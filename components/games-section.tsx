@@ -197,8 +197,16 @@ export function GamesSection() {
               backgroundAttachment: "fixed",
             }}
           >
+            <div
+              className="absolute inset-0 rounded-2xl bg-cover bg-center blur-sm"
+              style={{
+                backgroundImage: "url('/mysterious-man.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
             {/* Dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/70 rounded-2xl" />
+            <div className="absolute inset-0 bg-white/80 dark:bg-black/80 rounded-2xl" />
             <div className="relative z-10">
               <h3 className="text-2xl font-serif font-semibold text-white mb-4">{t("contact.title")}</h3>
               <p className="text-gray-200 mb-6 max-w-2xl mx-auto">{t("contact.subtitle")}</p>

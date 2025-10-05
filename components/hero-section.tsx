@@ -26,8 +26,7 @@ export function HeroSection() {
           backgroundSize: "cover",
         }}
       />
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/20" />
+      <div className="absolute inset-0 bg-white/10 dark:bg-black/80" />
 
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background/50 to-accent/5" />

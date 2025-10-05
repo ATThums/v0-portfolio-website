@@ -43,7 +43,7 @@ export function AIGallerySection() {
       image: "/Cyber_City.jpg",
       category: "Ficção Científica",
       prompt:
-        "Futuristic metropolis at night, towering skyscrapers illuminated with vibrant neon lights, flying vehicles zooming between buildings, bustling city streets with holographic billboards and glowing signs, reflections on wet surfaces, high-tech architecture blending glass and steel, atmospheric mist and glowing ambient lights, cinematic perspective, ultra-detailed, vibrant colors, cyberpunk aesthetic, dynamic and immersive cityscape, dramatic lighting and depth, futuristic skyline, futuristic vehicles in motion, highly detailed concept art, 8K, digital painting style.",
+        "Futuristic metropolis at night, towering skyscrapers illuminated with vibrant neon lights, flying vehicles and drones moving between buildings, bustling city streets with holographic billboards and glowing signs, reflections on wet surfaces, high-tech architecture blending glass and steel, atmospheric mist and glowing ambient lights, cinematic perspective, ultra-detailed, vibrant colors, cyberpunk aesthetic, dynamic and immersive cityscape, dramatic lighting and depth, futuristic skyline, futuristic vehicles in motion, highly detailed concept art, 8K, digital painting style.",
       model: "Leonardo Lightning XL",
       style: "Arte Conceitual",
       featured: true,
@@ -120,7 +120,7 @@ export function AIGallerySection() {
     {
       id: "fantasy-4",
       title: "Verdadeiro Rei",
-      description: "Imagem com dupla esposição de Aragorn, de Senhor dos Anéis",
+      description: "Imagem com dupla exposição de Aragorn, de Senhor dos Anéis",
       image: "/Aragorn.png",
       category: "Fantasia",
       prompt:
@@ -182,17 +182,18 @@ export function AIGallerySection() {
   const filteredArtworks = artworks.filter((art) => art.category === selectedCategory)
 
   return (
-    <section
-      className="py-20 relative min-h-screen"
-      style={{
-        backgroundImage: "url('/the-last-days.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/60"></div>
+    <section className="py-20 relative min-h-screen">
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-sm"
+        style={{
+          backgroundImage: "url('/the-last-days.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div className="absolute inset-0 bg-white/70 dark:bg-black/70"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-[80%]">
         {/* Section Header */}
