@@ -206,11 +206,11 @@ export function GamesSection() {
               }}
             />
             {/* Dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-white/80 dark:bg-black/80 rounded-2xl" />
+            <div className="absolute inset-0 bg-white/10 dark:bg-black/10 rounded-2xl" />
             <div className="relative z-10">
               <h3 className="text-2xl font-serif font-semibold text-white mb-4">{t("contact.title")}</h3>
               <p className="text-gray-200 mb-6 max-w-2xl mx-auto">{t("contact.subtitle")}</p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Button size="lg" className="bg-primary hover:bg-primary/100">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 {t("contact.send")}
               </Button>
