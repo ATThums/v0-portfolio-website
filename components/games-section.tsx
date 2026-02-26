@@ -197,7 +197,7 @@ export function GamesSection() {
                 backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-white/70 dark:bg-black/70 rounded-2xl" />
+            <div className="absolute inset-0 bg-white/70 dark:bg-black/50 rounded-2xl" />
 
             <div className="relative z-10">
               <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">{t("contact.title")}</h3>

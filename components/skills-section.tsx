@@ -91,7 +91,7 @@ export function SkillsSection() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <div className="absolute inset-0 bg-white/70 dark:bg-black/70" />
+      <div className="absolute inset-0 bg-white/70 dark:bg-black/50" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
