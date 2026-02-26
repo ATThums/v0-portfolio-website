@@ -188,29 +188,21 @@ export function GamesSection() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div
-            className="relative rounded-2xl p-8 border border-primary/20 overflow-hidden"
-            style={{
-              backgroundImage: "url('/mysterious-man.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed",
-            }}
-          >
+          <div className="relative rounded-2xl overflow-hidden p-12">
             <div
-              className="absolute inset-0 rounded-2xl bg-cover bg-center blur-sm"
+              className="absolute inset-0 bg-cover bg-center blur-sm"
               style={{
                 backgroundImage: "url('/mysterious-man.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             />
-            {/* Dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-white/10 dark:bg-black/10 rounded-2xl" />
+            <div className="absolute inset-0 bg-white/70 dark:bg-black/70 rounded-2xl" />
+
             <div className="relative z-10">
-              <h3 className="text-2xl font-serif font-semibold text-white mb-4">{t("contact.title")}</h3>
-              <p className="text-gray-200 mb-6 max-w-2xl mx-auto">{t("contact.subtitle")}</p>
-              <Button size="lg" className="bg-primary hover:bg-primary/100">
+              <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">{t("contact.title")}</h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">{t("contact.subtitle")}</p>
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 {t("contact.send")}
               </Button>
