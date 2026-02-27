@@ -119,43 +119,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Anderson Tonin Thums",
-              url: "https://andersonthums.vercel.app",
-              image: "/og-image.jpg",
-              jobTitle: "Game Developer & Digital Artist",
-              description: "Desenvolvedor de jogos, artista 3D e criador de arte com IA",
-              sameAs: [
-                "https://www.linkedin.com/in/anderson-tonin-thums/",
-                "https://github.com/ATThums",
-                "https://andersontt.itch.io/",
-                "https://sketchfab.com/AnderTThums",
-              ],
-              knowsAbout: [
-                "Game Development",
-                "Unity",
-                "Unreal Engine",
-                "3D Modeling",
-                "Blender",
-                "AI Art",
-                "C#",
-                "C++",
-                "Digital Art",
-              ],
-              alumniOf: {
-                "@type": "Organization",
-                name: "Educational Institution",
-              },
-            }),
-          }}
-        />
-      </head>
+      <head />
       <body className={`font-sans ${coda.variable} ${iceland.variable} antialiased`}>
         <Suspense fallback={null}>
           <ThemeProvider defaultTheme="dark">
